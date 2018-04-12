@@ -1,0 +1,70 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+##
+# Zadeklaruj:
+# - zmienn¹ `a`, zawieraj¹c¹ liczbê typu int,
+# - zmienn¹ `b`, zawieraj¹c¹ liczbê typu float,
+# - zmienn¹ `c`, zawieraj¹c¹ liczbê ca³kowit¹ typu float,
+# - zmienn¹ `d`, zawieraj¹c¹ ³añcuch `hello`,
+# %%
+
+a = 2
+b = 3.01
+c = 3.00
+d = 'hello'
+
+##
+# Przypisz:
+# - do zmiennej `e` wynik dodawania pomiêdzy `a` i `b`,
+# - do zmiennej `f` wynik odejmowania `c` od `e`,
+# - do zmiennej `g` wynik mno¿enia `e` i `f`,
+# - do zmiennej `h` wynik dzielenie `f` przez `g`,
+# - do zmiennej `i` resztê z dzielenia `a` przez `b`,
+# - do zmiennej `j` wynik podniesienia `i` do potêgi `a`.
+# %%
+
+e = a + b
+f = e - c
+g = e * f
+h = f / g
+i = a % b
+j = i ** a
+
+##
+# Utwórz:
+# - piêcioelementow¹ listê `foo`,
+# - piêcioelementow¹ krotkê (*tuple*) `bar`.
+#
+# Do trzeciego elementu listy `foo` przypisz wartoœæ a.
+
+# %%
+
+foo = [1, 2, 3, 4, 5]
+bar = (1, 2, 3, 4, 5)
+foo[2] = a
+
+
+##
+# Zadeklaruj
+# - funkcjê `mango` zwracaj¹c¹ wartoœæ `123`.
+# - funkcjê `banana` przyjmuj¹c¹ jeden argument i zwracaj¹c¹ liczbê jeden wiêksz¹.
+
+# %%
+
+def mango():
+    return 123
+
+def banana(num=3):
+    return num + 1
+
+
+##
+# Napisz klasê Tangerine ze zmienn¹ `sugar` (o wartoœci domyœlnej 5) i metod¹ `ackee`, przyjmuj¹c¹ argument i mno¿¹c¹ go przez `sugar`.
+class Tangerine:
+    sugar = 5
+
+    def ackee(self, num):
+        return num*self.sugar
+
+# %%
